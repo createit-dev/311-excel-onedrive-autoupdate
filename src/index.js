@@ -2,7 +2,6 @@ require('dotenv').config();
 const axios = require('axios');
 const ExcelJS = require('exceljs');
 
-const EXCEL_FILE_PATH = process.env.EXCEL_FILE_PATH;
 const AZURE_TENANT_ID = process.env.AZURE_TENANT_ID;
 const GRAPH_BASE_URL = "https://graph.microsoft.com/v1.0";
 const SITE_ID = process.env.AZURE_SHAREPOINT_SITE_ID;
@@ -172,7 +171,6 @@ async function update_excel(items) {
 
     } catch (error) {
         console.error(`Error writing to file`);
-        console.error(`Error writing to ${EXCEL_FILE_PATH}:`, error);
     }
 }
 
