@@ -41,7 +41,7 @@ Before running the script, you need to:
 
 1. Azure Application Registration: Ensure you have registered an application within the Azure portal. This process provides you with the necessary credentials, such as AZURE_CLIENT_ID and AZURE_CLIENT_SECRET, which are vital for the script's authentication with Azure services.
 2. Azure App Permission Setup: Once the application is registered, configure its permissions in the Azure portal.
-3. OneDrive Setup: Ensure the original Excel file is already uploaded to the root of the SharePoint document library in OneDrive. The script assumes the file's existence and will not create an initial version of it.
+3. OneDrive Setup: Ensure the original Excel file is already uploaded to the root of the SharePoint document library in OneDrive. The script assumes the file's existence and will not create an initial version of it. Example template: [testing300-template.xlsx](template%2Ftesting300-template.xlsx)
 4. Install Node.js and npm.
 5. Install the required Node.js modules using `npm install dotenv axios exceljs`.
 
@@ -86,6 +86,11 @@ OpenDrive data fetched!
 Current file is locked. Deleting and creating a new one.
 Successfully saved to OneDrive
 ```
+
+## Result
+![yrYa0pccZT.jpg](imgs%2FyrYa0pccZT.jpg)
+
+---
 
 ## Configuring Azure API Permissions:
 
